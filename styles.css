@@ -446,31 +446,37 @@ h3 {
   margin: clamp(28px, 4vw, 52px) clamp(14px, 3vw, 32px);
 }
 
-.design-strip {
+.cta-section {
   margin-top: clamp(44px, 7vw, 80px);
   padding: 0 0 clamp(40px, 6vw, 64px);
 }
 
-.design-card {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 24px;
-  align-items: center;
-  margin-bottom: 40px;
-  padding-block: clamp(24px, 4vw, 34px);
+.cta-box {
+  max-width: 920px;
+  margin-inline: auto;
+  padding: 60px 20px;
+  text-align: center;
   background: #ffffff;
   border: 1px solid var(--border-soft);
-  border-radius: 32px;
-  box-shadow: 0 20px 45px -28px rgba(44, 42, 41, 0.35);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-.design-card .accent {
-  margin-bottom: 6px;
+.cta-box h2 {
+  max-width: 760px;
+  margin-inline: auto;
+  margin-bottom: 10px;
+  font-size: clamp(2rem, 4vw, 3.25rem);
 }
 
-.design-card h2 {
-  max-width: 780px;
-  font-size: clamp(2.15rem, 4vw, 3.5rem);
+.cta-box h2 span {
+  color: #b35c4a;
+}
+
+.cta-box p {
+  max-width: 520px;
+  margin: 0 auto 25px;
+  color: #666666;
 }
 
 .split-grid {
@@ -829,7 +835,6 @@ h3 {
 
   .hero-grid,
   .split-grid,
-  .design-card,
   .contact-card {
     grid-template-columns: 1fr;
   }
