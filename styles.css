@@ -1,5 +1,5 @@
 :root {
-  --bg-base: #faf8f5;
+  --bg-base: #fffdf8;
   --bg-surface: #ffffff;
   --bg-alt: #f0eae1;
   --primary: #8b3e2f;
@@ -7,8 +7,8 @@
   --secondary: #d4a373;
   --whatsapp: #25d366;
   --whatsapp-hover: #1ebe5d;
-  --text-primary: #2c2a29;
-  --text-secondary: #5c5855;
+  --text-primary: #2b2b2b;
+  --text-secondary: #5a5a5a;
   --border-soft: #e8e2d9;
   --shadow-soft: 0 25px 50px -20px rgba(44, 42, 41, 0.18);
 }
@@ -56,6 +56,7 @@ h1,
 h2,
 h3 {
   font-family: "Cormorant Garamond", Georgia, serif;
+  color: #2b2b2b;
   line-height: 1.05;
   letter-spacing: 0;
 }
@@ -243,7 +244,8 @@ h3 {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: clamp(86px, 13vw, 150px) 0 clamp(64px, 9vw, 110px);
+  min-height: auto;
+  padding: clamp(54px, 7vw, 78px) 0 clamp(42px, 6vw, 64px);
 }
 
 .hero-grid {
@@ -438,11 +440,15 @@ h3 {
 }
 
 .section {
-  padding: clamp(72px, 10vw, 128px) 0;
+  padding: clamp(56px, 8vw, 88px) 0;
+  background: #ffffff;
+  border-radius: 16px;
+  margin: clamp(28px, 4vw, 52px) clamp(14px, 3vw, 32px);
 }
 
 .design-strip {
-  padding: 0 0 clamp(44px, 7vw, 78px);
+  margin-top: clamp(44px, 7vw, 80px);
+  padding: 0 0 clamp(40px, 6vw, 64px);
 }
 
 .design-card {
@@ -450,6 +456,7 @@ h3 {
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 24px;
   align-items: center;
+  margin-bottom: 40px;
   padding-block: clamp(24px, 4vw, 34px);
   background: #ffffff;
   border: 1px solid var(--border-soft);
@@ -508,7 +515,7 @@ h3 {
 
 .menu-section,
 .gallery-section {
-  background: var(--bg-alt);
+  background: #ffffff;
 }
 
 .product-grid,
@@ -739,21 +746,22 @@ h3 {
 
 .footer {
   padding: 72px 0 34px;
-  color: rgba(250, 248, 245, 0.7);
-  background: var(--text-primary);
+  color: #333333;
+  background: #ffffff;
+  border-top: 1px solid var(--border-soft);
 }
 
 .footer-grid {
   display: grid;
   grid-template-columns: 1.4fr 1fr 1fr;
   gap: 34px;
-  border-top: 1px solid rgba(250, 248, 245, 0.14);
+  border-top: 1px solid var(--border-soft);
   padding-top: 34px;
 }
 
 .footer strong {
   display: block;
-  color: #ffffff;
+  color: #2b2b2b;
 }
 
 .footer p {
@@ -764,7 +772,7 @@ h3 {
 .footer a {
   display: inline-block;
   margin-top: 12px;
-  color: var(--secondary);
+  color: var(--primary);
   font-weight: 700;
 }
 
@@ -779,7 +787,7 @@ h3 {
   max-width: 1280px;
   margin: 28px auto 0 !important;
   padding-inline: clamp(22px, 5vw, 48px);
-  color: rgba(250, 248, 245, 0.46);
+  color: #777777;
   font-size: 0.82rem !important;
 }
 
