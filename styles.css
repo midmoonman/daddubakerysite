@@ -250,7 +250,7 @@ main > section {
   position: relative;
   overflow: hidden;
   min-height: auto;
-  padding-top: 60px;
+  padding-top: 34px;
   padding-bottom: 40px;
 }
 
@@ -282,7 +282,7 @@ main > section {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 26px;
+  margin-bottom: 16px;
   padding: 8px 16px;
   background: #ffffff;
   border: 1px solid var(--border-soft);
@@ -348,6 +348,10 @@ main > section {
   position: relative;
 }
 
+.hero-card {
+  transform: translateY(20px);
+}
+
 .photo-glow {
   position: absolute;
   inset: -18px;
@@ -363,53 +367,6 @@ main > section {
   object-fit: cover;
   border-radius: 42px;
   box-shadow: var(--shadow-soft);
-}
-
-.photo-note {
-  position: absolute;
-  z-index: 2;
-  padding: 14px 20px;
-  background: #ffffff;
-  border: 1px solid var(--border-soft);
-  border-radius: 20px;
-  box-shadow: 0 18px 38px rgba(44, 42, 41, 0.14);
-}
-
-.photo-note strong,
-.photo-note span {
-  display: block;
-}
-
-.photo-note strong {
-  color: var(--primary);
-  font-family: "Caveat", cursive;
-  font-size: 1.7rem;
-  line-height: 1;
-}
-
-.photo-note span {
-  margin-top: 5px;
-  color: var(--text-secondary);
-  font-size: 0.78rem;
-  font-weight: 700;
-}
-
-.note-left {
-  bottom: -22px;
-  left: -26px;
-}
-
-.note-right {
-  top: -18px;
-  right: -18px;
-  color: #ffffff;
-  background: var(--primary);
-  transform: rotate(3deg);
-}
-
-.note-right strong,
-.note-right span {
-  color: #ffffff;
 }
 
 .hero-order-panel {
@@ -1010,7 +967,15 @@ main > section {
   }
 
   .hero {
-    padding-top: 48px;
+    padding-top: 42px;
+  }
+
+  .hero-card {
+    transform: none;
+  }
+
+  .rating-pill {
+    margin-bottom: 18px;
   }
 
   .hero-actions,
@@ -1027,11 +992,6 @@ main > section {
   .hero-secondary-links {
     justify-content: center;
     padding-top: 2px;
-  }
-
-  .note-left,
-  .note-right {
-    display: none;
   }
 
   .hero-order-panel {
