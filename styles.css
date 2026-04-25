@@ -406,6 +406,31 @@ h3 {
   padding: clamp(72px, 10vw, 128px) 0;
 }
 
+.design-strip {
+  padding: 0 0 clamp(44px, 7vw, 78px);
+}
+
+.design-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+  padding-block: clamp(24px, 4vw, 34px);
+  background: #ffffff;
+  border: 1px solid var(--border-soft);
+  border-radius: 32px;
+  box-shadow: 0 20px 45px -28px rgba(44, 42, 41, 0.35);
+}
+
+.design-card .accent {
+  margin-bottom: 6px;
+}
+
+.design-card h2 {
+  max-width: 780px;
+  font-size: clamp(2.15rem, 4vw, 3.5rem);
+}
+
 .split-grid {
   display: grid;
   grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
@@ -713,6 +738,7 @@ h3 {
 
   .hero-grid,
   .split-grid,
+  .design-card,
   .contact-card {
     grid-template-columns: 1fr;
   }
