@@ -199,6 +199,16 @@ h3 {
   box-shadow: 0 10px 25px -8px rgba(37, 211, 102, 0.5);
 }
 
+.btn-call {
+  color: #ffffff;
+  background: var(--primary);
+}
+
+.btn-call:hover {
+  background: var(--primary-hover);
+  box-shadow: 0 10px 25px -8px rgba(139, 62, 47, 0.45);
+}
+
 .btn-outline {
   color: var(--primary);
   background: transparent;
