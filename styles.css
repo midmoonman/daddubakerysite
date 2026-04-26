@@ -92,7 +92,7 @@ h3 {
   padding-inline: 0;
 }
 
-main > section {
+main>section {
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -599,7 +599,7 @@ main > section {
   gap: 32px;
 }
 
-.row-head > p {
+.row-head>p {
   max-width: 390px;
   margin-bottom: 8px;
   color: var(--text-secondary);
@@ -783,7 +783,7 @@ main > section {
   border-radius: 0;
 }
 
-.contact-card > div:first-child {
+.contact-card>div:first-child {
   padding-left: clamp(10px, 2vw, 24px);
 }
 
@@ -898,6 +898,7 @@ main > section {
     opacity: 0;
     transform: translateY(24px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -908,9 +909,11 @@ main > section {
   0% {
     box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
   }
+
   70% {
     box-shadow: 0 0 0 18px rgba(37, 211, 102, 0);
   }
+
   100% {
     box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
   }
@@ -1005,7 +1008,7 @@ main > section {
     flex-direction: column;
   }
 
-  .row-head > p {
+  .row-head>p {
     max-width: 100%;
     text-align: left;
   }
